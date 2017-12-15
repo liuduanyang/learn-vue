@@ -30,7 +30,7 @@ var app=new Vue({
                 var item=this.list[i];
                 total+=item.price*item.count;            
             }
-            return total.toString().replace(/\B(?=(\d{3})+$)/,',');
+            return total.toString().replace(/\B(?=(\d{3})+$)/g,',');
         }
     },
     methods:{
